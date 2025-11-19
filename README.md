@@ -4,22 +4,22 @@ Foundational UI automation project demonstrating core Cypress commands, selector
 
 ## 📋 Project Overview
 
-This project showcases fundamental Cypress testing skills through 8 comprehensive tests covering login page validation, user interactions, and authentication flows. It demonstrates clean test structure, proper use of hooks, and essential Cypress commands.
+This project showcases fundamental Cypress testing concepts through 8 comprehensive tests covering login page validation, user interactions, and authentication flows. It demonstrates clean test structure, proper use of hooks, and essential Cypress commands.
 
-## 🎯 What I Learned
+## 🎯 Skills Demonstrated
 
-This project demonstrates my ability to:
+This project demonstrates proficiency in:
 
-- **Write automated UI tests** using Cypress framework
-- **Use CSS and attribute selectors** to locate elements (`#id`, `[data-test]`)
-- **Chain assertions** with `.should()` and `.and()` for comprehensive validation
-- **Interact with web elements** using `.type()`, `.click()`, and `.clear()`
-- **Validate page content** with `.contains()` for text verification
-- **Manage test state** with `beforeEach()` hooks
-- **Clear browser data** between tests (cookies, localStorage)
-- **Test positive and negative scenarios** (valid/invalid login attempts)
-- **Verify URL navigation** after successful actions
-- **Structure tests logically** with descriptive test names
+- **Writing automated UI tests** using Cypress framework
+- **Using CSS and attribute selectors** to locate elements (`#id`, `[data-test]`)
+- **Chaining assertions** with `.should()` and `.and()` for comprehensive validation
+- **Interacting with web elements** using `.type()`, `.click()`, and `.clear()`
+- **Validating page content** with `.contains()` for text verification
+- **Managing test state** with `beforeEach()` hooks
+- **Clearing browser data** between tests (cookies, localStorage)
+- **Testing positive and negative scenarios** (valid/invalid login attempts)
+- **Verifying URL navigation** after successful actions
+- **Structuring tests logically** with descriptive test names
 
 ## 📊 Test Coverage
 
@@ -44,7 +44,7 @@ This project demonstrates my ability to:
 - **JavaScript** - Test scripting language
 - **SauceDemo** - Demo e-commerce application for testing
 
-## 🔍 Key Cypress Commands Demonstrated
+## 📝 Key Cypress Commands Demonstrated
 
 ### Element Selection
 ```javascript
@@ -169,45 +169,37 @@ saucedemo-basic-tests/
 ## 🔗 Related Projects
 
 - [SauceDemo Intermediate Tests](../saucedemo-intermediate-tests) - Data-driven testing with custom commands
-- [Cypress E-Commerce Advanced](../cypress-ecommerce-testing) - Page Object Model implementation
+- [Cypress E-Commerce Testing](../cypress-ecommerce-testing) - Page Object Model implementation
 - [API Basic Testing](../basic-api-testing) - REST API testing fundamentals
 
-## 📈 Progression Path
+## 📌 Portfolio Context
 
-This is the **foundational** project in my testing portfolio, demonstrating:
+This project is part of a structured portfolio demonstrating comprehensive UI automation expertise from fundamental patterns to advanced architectures. While my advanced projects like [Cypress E-Commerce Testing](../cypress-ecommerce-testing) showcase production-ready implementations with Page Object Model, CI/CD, and complex workflows, this collection focuses on clearly demonstrating core Cypress concepts that form the foundation of those advanced patterns.
 
-**Current Level: Basic**
-- ✅ Core Cypress commands
-- ✅ Element selection
-- ✅ Simple assertions
-- ✅ Test structure
+**Focus Area:** Fundamental Cypress testing patterns
+- Core commands and selectors
+- Basic assertions and validations
+- Test structure and organization
+- Browser state management
 
-**Next Level: Intermediate** ([See intermediate project](../saucedemo-intermediate-tests))
-- Custom commands (`cy.login()`)
-- Data-driven testing with `forEach`
-- Multiple test suites
-- Advanced assertions
-
-**Advanced Level:** ([See advanced project](../cypress-ecommerce-testing))
-- Page Object Model
-- Custom commands library
-- Complex workflows
-- CI/CD integration
+**Related Skill Levels:**
+- **Intermediate:** [SauceDemo Intermediate Tests](../saucedemo-intermediate-tests) - Custom commands, data-driven patterns
+- **Advanced:** [Cypress E-Commerce Testing](../cypress-ecommerce-testing) - POM architecture, CI/CD, component testing
 
 ## 💡 Custom Commands
 
-While this basic project intentionally uses native Cypress commands to demonstrate fundamentals, I've included a `cy.login()` custom command in `commands.js` for potential reuse in more advanced tests:
+While this project intentionally uses native Cypress commands to demonstrate fundamentals clearly, the codebase includes a `cy.login()` custom command in `commands.js` for potential reuse:
 
 ```javascript
 // Available but not used in basic tests
 cy.login('standard_user', 'secret_sauce')
 ```
 
-This shows awareness of code reusability while keeping basic tests educational and explicit.
+This shows awareness of code reusability patterns while keeping the test examples explicit and educational.
 
 ## 🧪 Test Philosophy
 
-These tests follow best practices:
+These tests follow industry best practices:
 
 1. **Independent Tests** - Each test can run alone
 2. **Clean State** - `beforeEach` ensures fresh start
@@ -222,10 +214,10 @@ These tests follow best practices:
 - **Browser Compatibility**: Tested on Chrome, Firefox, Edge
 - **Flakiness**: Zero flaky tests - all tests are stable
 
-## 📧 Questions?
+## 📧 Contact
 
-Feel free to reach out if you have questions about this project or Cypress testing in general!
+For questions about this project or Cypress testing patterns, feel free to reach out via [tyrael78w@gmail.com](mailto:tyrael78w@gmail.com)
 
 ---
 
-**Created as part of my QA Testing portfolio** | **Date: November 2025**
+**Part of QA Testing Portfolio** | **November 2025**
