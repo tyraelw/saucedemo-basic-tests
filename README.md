@@ -1,4 +1,5 @@
-# SauceDemo - Basic Cypress Tests
+# 🧪 SauceDemo - Basic Cypress Tests
+![Cypress](https://img.shields.io/badge/Cypress-17202C?style=flat&logo=cypress&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![E2E Testing](https://img.shields.io/badge/E2E-Testing-green)
 
 Foundational UI automation project demonstrating core Cypress commands, selectors, and assertion patterns using the SauceDemo login page.
 
@@ -6,24 +7,9 @@ Foundational UI automation project demonstrating core Cypress commands, selector
 
 This project showcases fundamental Cypress testing concepts through 8 comprehensive tests covering login page validation, user interactions, and authentication flows. It demonstrates clean test structure, proper use of hooks, and essential Cypress commands.
 
-## 🎯 Skills Demonstrated
-
-This project demonstrates proficiency in:
-
-- **Writing automated UI tests** using Cypress framework
-- **Using CSS and attribute selectors** to locate elements (`#id`, `[data-test]`)
-- **Chaining assertions** with `.should()` and `.and()` for comprehensive validation
-- **Interacting with web elements** using `.type()`, `.click()`, and `.clear()`
-- **Validating page content** with `.contains()` for text verification
-- **Managing test state** with `beforeEach()` hooks
-- **Clearing browser data** between tests (cookies, localStorage)
-- **Testing positive and negative scenarios** (valid/invalid login attempts)
-- **Verifying URL navigation** after successful actions
-- **Structuring tests logically** with descriptive test names
-
 ## 📊 Test Coverage
 
-### Test Suite: Login Page
+**Test Suite:** Login Page
 
 | Test # | Test Name | Purpose |
 |--------|-----------|---------|
@@ -36,11 +22,11 @@ This project demonstrates proficiency in:
 | 7 | should login successfully with valid credentials | Tests positive login scenario |
 | 8 | should show error with invalid credentials | Tests negative login scenario |
 
-**Total: 8 automated tests covering login functionality**
+**Total:** 8 automated tests covering login functionality
 
 ## 🛠️ Technologies Used
 
-- **Cypress** v13+ - Modern end-to-end testing framework
+- **Cypress v13+** - Modern end-to-end testing framework
 - **JavaScript** - Test scripting language
 - **SauceDemo** - Demo e-commerce application for testing
 
@@ -87,15 +73,15 @@ beforeEach(() => {
 ### Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd saucedemo-basic-tests
-   ```
+```bash
+git clone <repository-url>
+cd saucedemo-basic-tests
+```
 
 2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 ### Running Tests
 
@@ -103,9 +89,9 @@ beforeEach(() => {
 ```bash
 npx cypress open
 ```
-- Select "E2E Testing"
-- Choose a browser
-- Click on `basic-tests.cy.js`
+1. Select "E2E Testing"
+2. Choose a browser
+3. Click on `basic-tests.cy.js`
 
 **Run Tests in Headless Mode**
 ```bash
@@ -118,29 +104,26 @@ npx cypress run --spec "cypress/e2e/basic-tests.cy.js"
 ```
 
 ### Expected Results
-```
-✓ All 8 tests should pass
-✓ Average test duration: ~5-10 seconds
-✓ No flaky tests (consistent results)
-```
+- ✓ All 8 tests should pass
+- ✓ Average test duration: ~5-10 seconds
+- ✓ No flaky tests (consistent results)
 
 ## 📁 Project Structure
-
 ```
 saucedemo-basic-tests/
 ├── cypress/
 │   ├── e2e/
 │   │   └── basic-tests.cy.js      # Main test file
 │   ├── support/
-│   │   ├── commands.js             # Custom commands (for future use)
+│   │   ├── commands.js             # Custom commands
 │   │   └── e2e.js                  # Test configuration
 │   └── fixtures/                   # Test data (if needed)
 ├── cypress.config.js               # Cypress configuration
 ├── package.json                    # Project dependencies
-└── README.md                       # This file
+└── README.md                       # Documentation
 ```
 
-## 🎓 Skills Demonstrated
+## 🎯 Skills Demonstrated
 
 ### Testing Fundamentals
 - Test organization with `describe` and `it` blocks
@@ -166,58 +149,49 @@ saucedemo-basic-tests/
 - DRY principle with `beforeEach`
 - Maintainable test code
 
-## 🔗 Related Projects
-
-- [SauceDemo Intermediate Tests](../saucedemo-intermediate-tests) - Data-driven testing with custom commands
-- [Cypress E-Commerce Testing](../cypress-ecommerce-testing) - Page Object Model implementation
-- [API Basic Testing](../basic-api-testing) - REST API testing fundamentals
-
-## 📌 Portfolio Context
-
-This project is part of a structured portfolio demonstrating comprehensive UI automation expertise from fundamental patterns to advanced architectures. While my advanced projects like [Cypress E-Commerce Testing](../cypress-ecommerce-testing) showcase production-ready implementations with Page Object Model, CI/CD, and complex workflows, this collection focuses on clearly demonstrating core Cypress concepts that form the foundation of those advanced patterns.
-
-**Focus Area:** Fundamental Cypress testing patterns
-- Core commands and selectors
-- Basic assertions and validations
-- Test structure and organization
-- Browser state management
-
-**Related Skill Levels:**
-- **Intermediate:** [SauceDemo Intermediate Tests](../saucedemo-intermediate-tests) - Custom commands, data-driven patterns
-- **Advanced:** [Cypress E-Commerce Testing](../cypress-ecommerce-testing) - POM architecture, CI/CD, component testing
-
 ## 💡 Custom Commands
 
-While this project intentionally uses native Cypress commands to demonstrate fundamentals clearly, the codebase includes a `cy.login()` custom command in `commands.js` for potential reuse:
-
+The codebase includes a `cy.login()` custom command in `commands.js` for reusable login functionality:
 ```javascript
-// Available but not used in basic tests
+// Available custom command
 cy.login('standard_user', 'secret_sauce')
 ```
-
-This shows awareness of code reusability patterns while keeping the test examples explicit and educational.
 
 ## 🧪 Test Philosophy
 
 These tests follow industry best practices:
 
-1. **Independent Tests** - Each test can run alone
-2. **Clean State** - `beforeEach` ensures fresh start
-3. **Clear Intent** - Test names describe what's being tested
-4. **Single Responsibility** - Each test validates one thing
-5. **No Hardcoded Waits** - Cypress handles timing automatically
+- **Independent Tests** - Each test can run alone
+- **Clean State** - `beforeEach` ensures fresh start
+- **Clear Intent** - Test names describe what's being tested
+- **Single Responsibility** - Each test validates one thing
+- **No Hardcoded Waits** - Cypress handles timing automatically
 
 ## 📝 Notes
 
-- **Application Under Test**: [SauceDemo](https://www.saucedemo.com/) - A demo e-commerce site for testing
-- **Test Credentials**: Available on the login page
-- **Browser Compatibility**: Tested on Chrome, Firefox, Edge
-- **Flakiness**: Zero flaky tests - all tests are stable
+- **Application Under Test:** SauceDemo - A demo e-commerce site for testing
+- **Test Credentials:** Available on the login page
+- **Browser Compatibility:** Tested on Chrome, Firefox, Edge
+- **Flakiness:** Zero flaky tests - all tests are stable
+
+## 🔗 Related Projects
+
+- [SauceDemo Intermediate Tests](link) - Data-driven testing with custom commands
+- [Cypress E-Commerce Testing](link) - Page Object Model implementation
+- [API Basic Testing](link) - REST API testing fundamentals
+
+## 👤 Author
+
+**Isrrael Andres Toro Alvarez**
+
+- GitHub: [@tyraelw](https://github.com/tyraelw)
+- LinkedIn: [Isrrael Toro Alvarez](https://linkedin.com/in/your-profile)
+- Email: tyrael78w@gmail.com
 
 ## 📧 Contact
 
-For questions about this project or Cypress testing patterns, feel free to reach out via [tyrael78w@gmail.com](mailto:tyrael78w@gmail.com)
+For questions about this project or Cypress testing patterns: tyrael78w@gmail.com
 
 ---
 
-**Part of QA Testing Portfolio** | **November 2025**
+*Part of QA Testing Portfolio | November 2025*
