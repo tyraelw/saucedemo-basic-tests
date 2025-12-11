@@ -151,9 +151,9 @@ saucedemo-basic-tests/
 
 ## 💡 Custom Commands
 
-The codebase includes a `cy.login()` custom command in `commands.js` for reusable login functionality:
+The project uses a `cy.login()` custom command in `commands.js` for reusable login functionality. This command is implemented in tests 7 and 8 to eliminate code duplication.
 ```javascript
-// Available custom command
+// Used in login tests (7 & 8)
 cy.login('standard_user', 'secret_sauce')
 ```
 
