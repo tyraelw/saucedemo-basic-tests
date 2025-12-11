@@ -55,20 +55,18 @@ describe('Login Page Basic Tests', () => {
     })
 
     it('should login successfully with valid credentials', () => {
-        // Test successful login flow
-        cy.get('#user-name').type('standard_user')
-        cy.get('#password').type('secret_sauce')
-        cy.get('#login-button').click()
+        // Test successful login flow using custom command
+        cy.login('standard_user', 'secret_sauce')
         
         // Verify redirect to inventory page
         cy.url().should('contain', 'inventory')
+        cy.contains('Products').should('be.visible')
+        cy.contains('Accepted usernames are:').should('not.exist')
     })
 
     it('should show error with invalid credentials', () => {
-        // Test failed login with wrong credentials
-        cy.get('#user-name').type('standard_users')
-        cy.get('#password').type('secret_sauces')
-        cy.get('#login-button').click()
+        // Test failed login with wrong credentials using custom command
+        cy.login('standard_users', 'secret_sauces')
         
         // Verify error message appears
         cy.get('h3[data-test="error"]')
